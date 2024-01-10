@@ -79,7 +79,7 @@ const Secondnavbar = ({ isStrue }) => {
                     ))}
                     {navList.map((value, index) => (
               
-              <div className="text-2xl width  text-white cursor-pointer" key={index}>
+              <div className="text-2xl px-4 py-2 w-100 text-white cursor-pointer flex justify-center" key={index}>
                 {/* <Link to={value.path} className="text"> */}
                 {value.log ?
                   <span className="p-2 font-[400] text-xl text-white-600 bg-black rounded-lg hover:bg-gray-300">{value.name}</span> :
