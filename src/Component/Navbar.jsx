@@ -9,8 +9,8 @@ const Navbar = ({isStrue, setisStrue}) => {
   return (
     <> 
   
-           <nav className="z-50 sticky top-0 flex items-center justify-between w-full py-2 bg-zinc-100 shadow-lg flex-nowrap text-black-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-white-600 lg:flex-wrap lg:justify-start lg:py-4" data-te-navbar-ref>
-        <div className="container flex flex-wrap items-center justify-between w-full px-3 mx-auto">
+           <nav className="z-50 sticky top-0 flex items-center justify-between w-full py-2 bg-inherit shadow-lg flex-nowrap text-black-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-white-600 lg:flex-wrap lg:justify-start lg:py-4" data-te-navbar-ref>
+        <div className=" flex flex-wrap items-center justify-between w-full px-3 mx-auto">
             <img src={img} alt="" className=''/>
             <button onClick={handleIsTrue} className="block px-2 bg-transparent border-0 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
                 type="button" data-te-collapse-init data-te-target="#navbarSupportedContent3"
