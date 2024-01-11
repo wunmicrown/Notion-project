@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from './Component/Navbar'
 import SecondNavbar from './Component/Secondnavbar'
-import { Newyearsection } from './Component/Newyearsection'
+import { Superhero } from './Component/Superhero'
 
 const App = () => {
   const [isStrue, setisStrue] = useState(false)
@@ -9,7 +9,7 @@ const App = () => {
     <>
       <Navbar setisStrue={setisStrue} isStrue={isStrue} />
       <SecondNavbar isStrue={isStrue}/>
-      <Newyearsection/>
+      <Superhero/>
     </>
   )
 }
