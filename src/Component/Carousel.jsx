@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import img from '../assets/image-folder/Kombi_Hero.png';
 import img1 from '../assets/image-folder/engineering.png';
 import img2 from '../assets/image-folder/projects.png';
+import img2 from '../assets/image-folder/meeting-notes.png';
 
 const Carousel = () => {
-  const images = [img, img1, img2, img1]; 
+  const images = [img, img1, img2, img3]; 
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handlePrevSlide = () => {
