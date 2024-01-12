@@ -65,11 +65,11 @@ const Secondnavbar = ({ isStrue }) => {
                                     <p className='font-medium text-lg text-center py-2 '>{Details.name}</p>
                                     <ul>
                                         {Details.courses.map((course, courseIndex) => (
-                                            <>
+                                            // <>
                                                 <li key={courseIndex} className='flex gap-1'>
                                                     <li className=' list-item'>{course}</li>
                                                 </li>
-                                            </>
+                                            // </>
 
                                         ))}
                                     </ul>

@@ -1,27 +1,26 @@
-import React from 'react'
-// import './Main.css'
+import React, { useState } from 'react'
 import img from '../assets/image-folder/notion-logo.png'
+import { FaList, FaTimes } from "react-icons/fa";
+import { RxCross1 } from "react-icons/rx";
 
 const Navbar = ({isStrue, setisStrue}) => {
+    const [tab, settab] = useState(true)
     const handleIsTrue = () => {
         setisStrue(!isStrue);
+        settab(!tab)
     }
   return (
     <> 
   
            <nav className="z-50 sticky top-0 flex items-center justify-between w-full py-2 bg-inherit shadow-lg flex-nowrap text-black-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-white-600 lg:flex-wrap lg:justify-start lg:py-4" data-te-navbar-ref>
-        <div className=" flex flex-wrap items-center justify-between w-full px-3 mx-auto">
+        <div className=" flex flex-wrap transition-all duration-300 ease-in-out items-center justify-between w-full px-3 mx-auto">
             <img src={img} alt="" className=''/>
-            <button onClick={handleIsTrue} className="block px-2 bg-transparent border-0 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+            <button onClick={handleIsTrue} className="block transition-all duration-300 ease-in-out px-2 bg-transparent border-0 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
                 type="button" data-te-collapse-init data-te-target="#navbarSupportedContent3"
                 aria-controls="navbarSupportedContent3" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="[&>svg]:w-7">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-7 w-7">
-                        <path fill-rule="evenodd"
-                            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </span>
+                    <span className="text ">
+                    {tab ? <FaList className="text-2xl transition-all duration-300 ease-in-out" /> : <RxCross1 className="text-2xl transition-all duration-300 ease-in-out font-bold" />}
+                    </span>
             </button>
 
             <div className="!visible mt-2 hidden ms-5 flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
