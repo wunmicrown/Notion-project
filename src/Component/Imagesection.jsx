@@ -5,6 +5,7 @@ import Doordash from '../assets/image-folder/doordash.png'
 import Nike from '../assets/image-folder/nike.png'
 import Amazone from '../assets/image-folder/amazon.png'
 import Pinterest from '../assets/image-folder/Pinterest.png'
+import General_ from '../assets/image-folder/General_.png'
 const Imagesection = () => {
   return (
     <>
@@ -15,6 +16,10 @@ const Imagesection = () => {
             <img src={Nike} alt="nikeimg"className=' w-[120px]' />
             <img src={Amazone} alt="amzonimg"className=' w-[120px]' />
             <img src={Pinterest} alt="Pinterestimg"className=' w-[120px]' />
+        </div> 
+        <div className=' flex mx-auto justify-center gap-10 mt-16'>
+            <img src={General_} alt="Figmaimg"  className=' w-[95px]'/>
+           
         </div> 
     </>
   )
