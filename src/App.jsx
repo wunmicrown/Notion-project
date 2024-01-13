@@ -5,6 +5,7 @@ import { Superhero } from './Component/Superhero'
 import Superheroimg from './Component/Superheroimg'
 import Cardsection from './Component/Cardsection'
 import Carousel from './Component/Carousel'
+import Imagesection from './Component/Imagesection'
 
 const App = () => {
   const [isStrue, setisStrue] = useState(false)
@@ -16,6 +17,7 @@ const App = () => {
       <Superheroimg/>
       <Cardsection/>
       <Carousel/>
+      <Imagesection/>
     </>
   )
 }
