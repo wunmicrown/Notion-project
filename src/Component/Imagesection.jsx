@@ -11,6 +11,8 @@ import Plaid from '../assets/image-folder/plaid.png'
 import Toyota from '../assets/image-folder/toyota.png'
 import Snowflake from '../assets/image-folder/snowflake.png'
 import Headspace from '../assets/image-folder/headspace.png'
+import Angellist from '../assets/image-folder/angel-list.png'
+import Robinhood from '../assets/image-folder/robinhood.png'
 const Imagesection = () => {
   return (
     <>
@@ -32,7 +34,8 @@ const Imagesection = () => {
             
         </div> 
         <div className=' flex mx-auto justify-center gap-10 mt-16'>
-            <img src={General_} alt="Figmaimg"  className=' w-[95px]'/>
+            <img src={Angellist} alt="angellistimg"  className=' w-[95px]'/>
+            <img src={Robinhood} alt="robinhoodimg"  className=' w-[95px]'/>
             
             
         </div> 
